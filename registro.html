@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Registro</title>
+    <link rel="stylesheet" href="teletax.css"> 
+</head>
+<body>
+    <div class="main-container registro">
+        <!-- Lado izquierdo con imagen -->
+        <div class="imag-side">
+            <img src="https://scmlatam.com/wp-content/uploads/2023/05/que-es-un-sistema-contable-y-su-importancia-1200x675.png" alt=" Registro" class="register-image">
+        </div>
+
+        <!-- Lado derecho con formulario de registro -->
+        <div class="form-side">
+            <div class="form-title">Realizar Registro</div>
+            <form class="register-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce un nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Introduce un apellido" required>
+
+                <label for="numero-identidad">Número de Identidad:</label>
+                <input type="number" id="numero-identidad" name="numero-identidad" placeholder="Introduce el número" required>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Introduce la contraseña" required>
+
+                <label for="confirmar-contraseña">Confirmar Contraseña:</label>
+                <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" placeholder="Confirma la contraseña" required>
+
+                <div class="form-buttons">
+                    <button type="submit" class="confirm-button">
+                        <span class="button-text">Confirmar</span>
+                        <span class="button-icon">
+                            <span class="icon-background">
+                                <span class="arrow-icon">→</span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <button type="button" class="cancel-button">
+                        <span class="button-text">Cancelar</span>
+                        <span class="button-icon">
+                            <span class="icon-background">
+                                <span class="cancel-icon">✗</span>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

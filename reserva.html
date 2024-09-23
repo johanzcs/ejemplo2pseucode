@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Reserva</title>
+    <link rel="stylesheet" href="teletax.css"> 
+</head>
+<body>
+    <div class="main-container reserva">
+        <!-- Lado izquierdo con imagen -->
+        <div class="image-side">
+            <img src="https://elluminatimedia.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/rydex/TaxiAppForSaleSpnsh/aplicaci%C3%B3ntaxilaventa.webp" alt="Imagen de Reserva" class="reservation-image">
+        </div>
+
+        <!-- Lado derecho con formulario de reserva -->
+        <div class="form-side">
+            <div class="form-title">Realizar Reserva</div>
+            <form class="reservation-form">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" placeholder="Selecciona una fecha">
+
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" placeholder="Introduce el destino">
+
+                <label for="origen">Origen:</label>
+                <input type="text" id="origen" name="origen" placeholder="Introduce el origen">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" placeholder="Selecciona la hora">
+
+                <div class="form-buttons">
+                    <button type="submit" class="confirm-button">
+                        <span class="button-text">Confirmar</span>
+                        <span class="button-icon">
+                            <span class="icon-background">
+                                <span class="arrow-icon">→</span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <button type="button" class="cancel-button">
+                        <span class="button-text">Cancelar</span>
+                        <span class="button-icon">
+                            <span class="icon-background">
+                                <span class="cancel-icon">✗</span>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

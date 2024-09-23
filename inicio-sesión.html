@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teletax.css"> <!-- ruta del css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="inicio-sesion">
+        <!-- Lado ixquierdo-->
+        <div class="post"> 
+            <img src="https://img.freepik.com/premium-vector/online-application-call-taxi-service-by-set-location-destination_135595-3595.jpg?w=740" alt="imagen" class="imagen">
+        </div>
+        <!-- Lado derecho -->
+        <div class="page">
+            <div class="title">
+                <h1>
+                    <span>BIENVENIDO A TELETAXI</span>
+                </h1>
+            </div>
+            <div class="email1">
+                <h1>Email:</h1>
+                <div class="ingresaremail">
+                    <input type="text" placeholder="Ingresa tu email">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="contraseña">
+                <h1>Contraseña: <span><a href="#">¿Has olvidado tu contraseña?</a></span> </h1>
+                <div class="ingresarcontraseña">
+                    <input type="password" placeholder="Ingresa tu contraseña">
+                    <span class="eye-icon" onclick="togglePassword()">👁️</span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="inicio-button" onclick="window.location.href='teletaxi.html';">
+                <span class="button-text">Iniciar Sesión</span>
+                <span class="button-icon">
+                    <span class="icon-background">
+                        <span class="arrow-icon">→</span>
+                    </span>
+                </span>
+            </button>
+            <div class="text-inicio"> <p> Inicia sesión con </p> </div>
+            <br>
+            <div class="redes">
+                <div class="red-google">
+                    <button class="boton-inicio">
+                        <i class="fab fa-google"></i> Iniciar con Google
+                    </button>
+                </div>
+                <div class="red-facebook">
+                    <button class="boton-inicio">
+                        <i class="fab fa-facebook-f"></i> Iniciar con Facebook
+                    </button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="crearcuenta"> 
+                <p> 
+                    ¿Todavía no tienes una cuenta?
+                    <a href="registro.html">Crea una cuenta</a>
+                </p>
+            </div>           
+        </div>
+    </div>         
+</body>
+</html>
