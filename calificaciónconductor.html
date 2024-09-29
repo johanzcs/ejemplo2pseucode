@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Calificación de Conductores</title>
+    <link rel="stylesheet" href="Calificación.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="conductor">
+    <div class="container-group">
+
+        <!-- Bloque de conductor -->
+        <div class="container">
+            <img src="https://img.freepik.com/premium-photo/illuminated-night-street-scene-with-taxis-cars_1092689-23703.jpg?w=740" alt="Taxi" class="taxi-image">
+            <h1>Califica a tu Conductor</h1>
+
+            <!-- Información del conductor -->
+            <div class="driver-info">
+                <img src="https://w7.pngwing.com/pngs/948/429/png-transparent-taxi-cartoon-driver-illustration-irate-police-police-officer-hat-hand-thumbnail.png" alt="Foto del Conductor" class="driver-photo">
+                <p>Conductor: <span>Juan Pérez</span></p>
+                <p>Vehículo: <span>Toyota Prius</span></p>
+                <p>Placa: <span>ABC-123</span></p>
+            </div>
+
+            <!-- Formulario de calificación -->
+            <form action="#" method="POST" id="rating-form">
+                <!-- Calificación general -->
+                <div class="rating">
+                    <label for="rating">Calificación general:</label>
+                    <div class="stars">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 estrellas">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 estrellas">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 estrellas">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 estrellas">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Puntualidad -->
+                <div class="rating">
+                    <label for="punctuality">Puntualidad:</label>
+                    <div class="stars">
+                        <input type="radio" id="punc5" name="punctuality" value="5">
+                        <label for="punc5" title="5 estrellas">★</label>
+                        <input type="radio" id="punc4" name="punctuality" value="4">
+                        <label for="punc4" title="4 estrellas">★</label>
+                        <input type="radio" id="punc3" name="punctuality" value="3">
+                        <label for="punc3" title="3 estrellas">★</label>
+                        <input type="radio" id="punc2" name="punctuality" value="2">
+                        <label for="punc2" title="2 estrellas">★</label>
+                        <input type="radio" id="punc1" name="punctuality" value="1">
+                        <label for="punc1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Limpieza del vehículo -->
+                <div class="rating">
+                    <label for="cleanliness">Limpieza del vehículo:</label>
+                    <div class="stars">
+                        <input type="radio" id="clean5" name="cleanliness" value="5">
+                        <label for="clean5" title="5 estrellas">★</label>
+                        <input type="radio" id="clean4" name="cleanliness" value="4">
+                        <label for="clean4" title="4 estrellas">★</label>
+                        <input type="radio" id="clean3" name="cleanliness" value="3">
+                        <label for="clean3" title="3 estrellas">★</label>
+                        <input type="radio" id="clean2" name="cleanliness" value="2">
+                        <label for="clean2" title="2 estrellas">★</label>
+                        <input type="radio" id="clean1" name="cleanliness" value="1">
+                        <label for="clean1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Sección de comentarios -->
+                <div class="comment-section">
+                    <label for="comment">Comentarios:</label>
+                    <textarea id="comment" name="comment" placeholder="Escribe tu opinión aquí..." required></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar Calificación</button>
+            </form>
+        </div>
+        <!-- Fin del bloque de conductor -->
+
+        <!-- Repite este bloque de contenedor para cada conductor adicional si es necesario -->
+        <div class="container">
+            <img src="https://img.freepik.com/fotos-premium/taxis-amarillos-ciudad-nueva-york-todo-lo-demas-negro_935552-1977.jpg" alt="Taxi" class="taxi-image">
+            <h1>Califica a tu Conductor</h1>
+
+            <div class="driver-info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsQqniKt0J8NFyWBOlD0SraFLC9oSscHyViEXjxJxXzHY4KLttjtzSQxEGlchCgOQBEo&usqp=CAU" alt="Foto del Conductor" class="driver-photo">
+                <p>Conductor: <span>Walter Pérez</span></p>
+                <p>Vehículo: <span>Toyota Prius</span></p>
+                <p>Placa: <span>ABC-123</span></p>
+            </div>
+
+            <form action="#" method="POST" id="rating-form">
+                 <!-- Formulario de calificación -->
+            <form action="#" method="POST" id="rating-form">
+                <!-- Calificación general -->
+                <div class="rating">
+                    <label for="rating">Calificación general:</label>
+                    <div class="stars">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 estrellas">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 estrellas">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 estrellas">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 estrellas">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Puntualidad -->
+                <div class="rating">
+                    <label for="punctuality">Puntualidad:</label>
+                    <div class="stars">
+                        <input type="radio" id="punc5" name="punctuality" value="5">
+                        <label for="punc5" title="5 estrellas">★</label>
+                        <input type="radio" id="punc4" name="punctuality" value="4">
+                        <label for="punc4" title="4 estrellas">★</label>
+                        <input type="radio" id="punc3" name="punctuality" value="3">
+                        <label for="punc3" title="3 estrellas">★</label>
+                        <input type="radio" id="punc2" name="punctuality" value="2">
+                        <label for="punc2" title="2 estrellas">★</label>
+                        <input type="radio" id="punc1" name="punctuality" value="1">
+                        <label for="punc1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Limpieza del vehículo -->
+                <div class="rating">
+                    <label for="cleanliness">Limpieza del vehículo:</label>
+                    <div class="stars">
+                        <input type="radio" id="clean5" name="cleanliness" value="5">
+                        <label for="clean5" title="5 estrellas">★</label>
+                        <input type="radio" id="clean4" name="cleanliness" value="4">
+                        <label for="clean4" title="4 estrellas">★</label>
+                        <input type="radio" id="clean3" name="cleanliness" value="3">
+                        <label for="clean3" title="3 estrellas">★</label>
+                        <input type="radio" id="clean2" name="cleanliness" value="2">
+                        <label for="clean2" title="2 estrellas">★</label>
+                        <input type="radio" id="clean1" name="cleanliness" value="1">
+                        <label for="clean1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Sección de comentarios -->
+                <div class="comment-section">
+                    <label for="comment">Comentarios:</label>
+                    <textarea id="comment" name="comment" placeholder="Escribe tu opinión aquí..." required></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar Calificación</button>
+            </form>
+        </div>
+
+
+        <div class="container">
+            <img src="https://b772872.smushcdn.com/772872/wp-content/uploads/2021/09/chicago-taxi-1-scaled-e1632906330148.jpg?lossy=1&strip=1&webp=1" alt="Taxi" class="taxi-image">
+            <h1>Califica a tu Conductor</h1>
+
+            <div class="driver-info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNVG2zN4NXGW5JF6ymMbEQobAm7gT86mN-NZ3b0j8UBmxyGx31cZHgw0pD_HblfB0fuE&usqp=CAU" alt="Foto del Conductor" class="driver-photo">
+                <p>Conductor: <span>Walter Pérez</span></p>
+                <p>Vehículo: <span>Toyota Prius</span></p>
+                <p>Placa: <span>ABC-123</span></p>
+            </div>
+
+            <form action="#" method="POST" id="rating-form">
+                 <!-- Formulario de calificación -->
+            <form action="#" method="POST" id="rating-form">
+                <!-- Calificación general -->
+                <div class="rating">
+                    <label for="rating">Calificación general:</label>
+                    <div class="stars">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 estrellas">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 estrellas">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 estrellas">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 estrellas">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Puntualidad -->
+                <div class="rating">
+                    <label for="punctuality">Puntualidad:</label>
+                    <div class="stars">
+                        <input type="radio" id="punc5" name="punctuality" value="5">
+                        <label for="punc5" title="5 estrellas">★</label>
+                        <input type="radio" id="punc4" name="punctuality" value="4">
+                        <label for="punc4" title="4 estrellas">★</label>
+                        <input type="radio" id="punc3" name="punctuality" value="3">
+                        <label for="punc3" title="3 estrellas">★</label>
+                        <input type="radio" id="punc2" name="punctuality" value="2">
+                        <label for="punc2" title="2 estrellas">★</label>
+                        <input type="radio" id="punc1" name="punctuality" value="1">
+                        <label for="punc1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Limpieza del vehículo -->
+                <div class="rating">
+                    <label for="cleanliness">Limpieza del vehículo:</label>
+                    <div class="stars">
+                        <input type="radio" id="clean5" name="cleanliness" value="5">
+                        <label for="clean5" title="5 estrellas">★</label>
+                        <input type="radio" id="clean4" name="cleanliness" value="4">
+                        <label for="clean4" title="4 estrellas">★</label>
+                        <input type="radio" id="clean3" name="cleanliness" value="3">
+                        <label for="clean3" title="3 estrellas">★</label>
+                        <input type="radio" id="clean2" name="cleanliness" value="2">
+                        <label for="clean2" title="2 estrellas">★</label>
+                        <input type="radio" id="clean1" name="cleanliness" value="1">
+                        <label for="clean1" title="1 estrella">★</label>
+                    </div>
+                </div>
+
+                <!-- Sección de comentarios -->
+                <div class="comment-section">
+                    <label for="comment">Comentarios:</label>
+                    <textarea id="comment" name="comment" placeholder="Escribe tu opinión aquí..." required></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar Calificación</button>
+            </form>
+        </div>
+   
+        
+               
+
+    </div>
+</body>
+</html>

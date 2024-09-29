@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Servicio Teletaxi</title>
+    <link rel="stylesheet" href="Calificación.css">
+</head>
+
+<body class="encuesta-page">
+    <div class="encuesta">
+        <div class="form-side">
+            <form action="Calificación de APPs.html" method="post">
+                <h1 class="form-title">Encuesta de Servicio Teletaxi</h1>
+                <fieldset>
+                    <legend>
+                        <h3 class="form-pasajero">Información del Pasajero</h3>
+                    </legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <h3>Encuesta del Servicio</h3>
+                    </legend>
+                    <label for="puntuacion">¿Cómo calificarías nuestro servicio?</label>
+                    <select id="puntuacion" name="puntuacion" required>
+                        <option value="1">1 - Muy Malo</option>
+                        <option value="2">2 - Malo</option>
+                        <option value="3">3 - Regular</option>
+                        <option value="4">4 - Bueno</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+
+                    <label>¿Qué aspectos consideras importantes? (Selecciona todos los que apliquen)</label>
+                    <div class="checkbox-group">
+                        <label for="puntualidad">Puntualidad</label>
+                        <input type="checkbox" id="puntualidad" name="aspectos" value="puntualidad">
+                        <label for="comodidad">Comodidad</label>
+                        <input type="checkbox" id="comodidad" name="aspectos" value="comodidad">
+                        <label for="precio">Precio</label>
+                        <input type="checkbox" id="precio" name="aspectos" value="precio">
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <h4 class="form-comentari">Comentarios Adicionales</h4>
+                    </legend>
+                    <label for="comentarios">Por favor, deja tus comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                </fieldset>
+
+                <button class="send-button" onclick="window.location.href='Calificación de APPs.html';">
+                    <span class="button-text">enviar</span>
+                    <span class="button-icon">
+                        <span class="icon-background">
+                            <span class="arrow-icon">→</span>
+                        </span>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

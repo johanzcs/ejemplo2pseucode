@@ -1,0 +1,310 @@
+body.app {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    background-image: url('https://cdn.pixabay.com/photo/2022/09/05/08/11/taxi-7433597_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 145vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: auto;
+    /* Allow scrolling */
+}
+
+/* Background for Encuesta de Servicio */
+body.encuesta-page {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 140%;
+    background-image: url('https://i.pinimg.com/originals/c8/2c/8c/c82c8c4ff9352c4d2e559c35f21719ad.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-container {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 35px;
+    color: rgb(248, 232, 0);
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    padding: 15px;
+    border: solid 10px rgb(248, 232, 0);
+    border-radius: 15px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    width: 100%;
+    
+    
+    
+}
+.form-side{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 35px;
+    color: rgb(248, 232, 0);
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    padding: 15px;
+    border: solid 10px rgb(248, 232, 0);
+    border-radius: 15px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    width: 100%; 
+}
+
+
+
+h1,
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(248, 232, 0);
+    font-family: "Roboto", sans-serif;
+}
+
+h3,
+.form-pasajero {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(248, 232, 0);
+    font-family: "Roboto", sans-serif;
+}
+
+h4,
+.form-comentari {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(248, 232, 0);
+    font-family: "Roboto", sans-serif;
+}
+
+.label,
+label {
+    color: rgb(248, 232, 0);
+    display: block;
+}
+
+input[type="email"],
+textarea,
+select {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(248, 232, 0);
+}
+
+textarea {
+    resize: none;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 40px;
+    color: yellow;
+    cursor: pointer;
+    
+}
+
+.stars input:checked~label {
+    color: #0ecdba;
+}
+
+.stars label:hover,
+.stars label:hover~label {
+    color: #04446b;
+}
+
+.stars label:active,
+.stars label:active~label {
+    color: #3509d4;
+}
+
+/* Form styles */
+form {
+    background-color: #16191C;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+input,
+select,
+textarea {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #F9E007;
+    background-color: #000000;
+    color: #F9E007;
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #F9E007;
+}
+
+/* Button styles */
+.send-button,
+.send1-button {
+    width: 300px;
+    height: 65px;
+    background: #dbdb18;
+    border: none;
+    border-radius: 15px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 755;
+    font-size: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    /* Aumentar el valor para separar más */
+    transition: background 0.4s, transform 0.3s;
+}
+
+
+.send-button:hover,
+.send1-button:hover {
+    background: #14e196;
+    transform: scale(2.16);
+}
+
+.send-button:active,
+.send1-button:active {
+    background: #4600c7;
+    transform: scale(1.12);
+}
+
+/* Focus effects */
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #F8DF04;
+    outline: none;
+}
+
+/* Checkbox styles */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    color: #F9E007;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #01ff27;
+}
+body.conductor {
+    background-color: black;
+    color: #fff;
+}
+
+.container-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 13px 35px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    background-color: black;
+    padding: 25px;
+    border: solid 5px rgb(248, 232, 0);
+    color: #F8E800;
+}
+
+.taxi-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 9px 20px rgba(0, 0, 0, 0.1);
+}
+
+.driver-photo {
+    width: 240px;
+    height: 215px;
+    border-radius: 55%;
+    border: 7px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.rating, .comment-section {
+    margin-bottom: 25px;
+}
+
+.stars label {
+    font-size: 33px;
+}
+
+textarea {
+    width: 100%;
+    height: 85px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #F9E007;
+    border: none;
+    border-radius: 9px;
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #046b09;
+    background: #14e196;
+    transform: scale(1.80);
+}
+.button:active {
+    background: #4600c7;
+    transform: scale(1.13);
+}
+
+
+
