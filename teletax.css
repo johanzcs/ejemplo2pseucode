@@ -8,13 +8,15 @@ body {
 }
 
 /* Contenedor principal */
-.main-container, .inicio-sesion {
+.main-container,
+.inicio-sesion {
     display: flex;
     width: 100vw;
     height: 100vh;
 }
 
-.main-container, .inicio-sesion:hover {
+.main-container,
+.inicio-sesion:hover {
     background-color: #000000;
 }
 
@@ -25,19 +27,21 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .image-side {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .imag-side {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-   
+
 
 /* Estilos para la imagen grande en la página principal */
 .large-image {
@@ -51,7 +55,7 @@ body {
 .post img {
     position: absolute;
     width: 50vw;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,15 +77,16 @@ body {
 
 /* Estilos para la imagen de reserva */
 .reservation-image {
-    width: 100%; 
-    height: 80%; 
+    width: 100%;
+    height: 80%;
     object-fit: cover;
     border: 5px solid transparent;
     transition: transform 0.8s, border 0.8s;
 }
+
 .register-image {
-    width: 99%; 
-    height: 85%; 
+    width: 99%;
+    height: 85%;
     object-fit: cover;
     border: 6px solid transparent;
     transition: transform 1.9s, border 1.9s;
@@ -97,18 +102,22 @@ body {
     transform: scale(1.1);
     border: 5px solid #f80404;
 }
+
 .imag-side:hover .register-image {
     transform: scale(1.1);
     border: 5px solid #f80404;
 }
 
 /* Lado derecho con contenido */
-.content-side, .form-side {
+.content-side,
+.form-side {
     width: 50%;
     padding: 50px;
     box-sizing: border-box;
-    background-color: #16191C; /* Fondo negro */
-    color: #F9E007; /* Texto en amarillo */
+    background-color: #16191C;
+    /* Fondo negro */
+    color: #F9E007;
+    /* Texto en amarillo */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,17 +130,19 @@ body {
     left: calc(50% - 819px/2 + 454.5px);
     top: 0px;
     padding: 20px;
-    width: 48%; 
+    width: 48%;
     padding: 20px;
     background: #16191C;
     height: 100vh;
 }
 
 /* Título en ambas páginas */
-.teletaxi-title, .form-title {
+.teletaxi-title,
+.form-title {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 64px; /* Tamaño grande para el título */
+    font-size: 64px;
+    /* Tamaño grande para el título */
     line-height: 1.2;
     color: #F9E007;
     margin-bottom: 30px;
@@ -141,7 +152,8 @@ body {
 .title h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 64px; /* Tamaño grande para el título */
+    font-size: 64px;
+    /* Tamaño grande para el título */
     line-height: 1.2;
     color: #F9E007;
     margin-bottom: 30px;
@@ -152,7 +164,7 @@ body {
     color: #FFFFFF;
 }
 
-.title h1 + span {
+.title h1+span {
     display: inline-block;
     transform: scale(1);
     transition: transform 0.3s ease;
@@ -177,7 +189,8 @@ body {
 .ingresaremail input[type="text"] {
     float: inline-end;
     width: 98%;
-    height: 43px;;
+    height: 43px;
+    ;
     padding: 10px;
     font-size: 18px;
 }
@@ -226,7 +239,8 @@ body {
 .ingresarcontraseña input[type="password"] {
     float: inline-end;
     width: 98%;
-    height: 43px;;
+    height: 43px;
+    ;
     padding: 10px;
     font-size: 18px;
 }
@@ -248,7 +262,8 @@ body {
 
 .eye-icon {
     position: absolute;
-    right: 15px; /* Ajusta la posición del ícono */
+    right: 15px;
+    /* Ajusta la posición del ícono */
     cursor: pointer;
     font-size: 18px;
     color: #F9E007;
@@ -260,37 +275,48 @@ body {
 }
 
 /* Botones generales */
-.register-button, .reservation-button, .confirm-button, .cancel-button {
-    width: 300px;
-    height: 60px;
-    background: #F8DF04;
+.register-button,
+.reservation-button,
+.survey-button,
+.confirm-button,
+.cancel-button {
+    width: 350px;
+    height: 65px;
+    background: #dbdb18;
     border: none;
-    border-radius: 8px;
-    color: #16191C;
+    border-radius: 10px;
+    color: #000000;
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    font-weight: 755;
+    font-size: 26px;
+    line-height: 31px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    transition: background 0.3s, transform 0.2s;
+    margin-bottom: 22px;
+    transition: background 0.4s, transform 0.3s;
 }
 
 /* Efectos hover y active en los botones */
-.register-button:hover, .reservation-button:hover, 
-.confirm-button:hover, .cancel-button:hover {
+.register-button:hover,
+.reservation-button:hover,
+.survey-button:hover,
+.confirm-button:hover,
+.cancel-button:hover {
     background: #14e196;
-    transform: scale(1.05);
+    transform: scale(2.06);
 }
 
-.register-button:active, .reservation-button:active, 
-.confirm-button:active, .cancel-button:active {
+.register-button:active,
+.reservation-button:active,
+.survey-button:active,
+.confirm-button:active,
+.cancel-button:active {
     background: #4600c7;
-    transform: scale(0.98);
+    transform: scale(1.09);
 }
+
 
 /* Estilos para el texto y los íconos en los botones */
 .button-text {
@@ -313,15 +339,18 @@ body {
     justify-content: center;
 }
 
-.arrow-icon, .cancel-icon {
+.arrow-icon,
+.cancel-icon {
     color: #F8DF04;
     font-size: 24px;
 }
 
 /* Estilos para los inputs del formulario */
 input {
-    color: #000000; /* Color del texto en negro */
-    background-color: #FFFFFF; /* Fondo blanco por defecto */
+    color: #000000;
+    /* Color del texto en negro */
+    background-color: #FFFFFF;
+    /* Fondo blanco por defecto */
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -336,15 +365,20 @@ input[type="text"],
 input[type="time"],
 input[type="number"],
 input[type="password"] {
-    background-color: #000000; /* Fondo negro */
-    color: #F9E007; /* Texto en blanco */
-    border: 1px solid #F9E007; /* Borde amarillo */
+    background-color: #000000;
+    /* Fondo negro */
+    color: #F9E007;
+    /* Texto en blanco */
+    border: 1px solid #F9E007;
+    /* Borde amarillo */
 }
 
 /* Estilo para el placeholder en los inputs */
 input::placeholder {
-    color: #F9E007 !important; /* Color amarillo para el placeholder */
-    opacity: 1 !important; /* Asegura que sea completamente opaco */
+    color: #F9E007 !important;
+    /* Color amarillo para el placeholder */
+    opacity: 1 !important;
+    /* Asegura que sea completamente opaco */
 }
 
 
@@ -371,23 +405,25 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px auto; 
+    margin: 20px auto;
     background-color: #F9E007;
     border-radius: 6px;
-    transition: background 0.3s ease;
+    transition: background 0.4s,  transform 0.3s;
 }
 
 .inicio-button:hover {
-    background: #14e196; 
+    background: #14e196;
+    transform: scale(2.06);
 }
 
 .inicio-button:active {
-    background: #4600c7; 
+    background: #4600c7;
+    transform: scale(1.09);
 }
 
 /* Espacio entre el texto y el icono */
 .button-text {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .button-icon {
@@ -414,7 +450,8 @@ input::placeholder {
 /* O inicia sesión con */
 .text-inicio p {
     position: relative;
-    margin-top: 10px; /* Reducir el espacio entre el texto y el botón */
+    margin-top: 10px;
+    /* Reducir el espacio entre el texto y el botón */
     text-align: center;
     font-family: 'Roboto';
     font-weight: 700;
@@ -426,10 +463,12 @@ input::placeholder {
 .redes {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px; /* Espacio entre el texto y los botones de redes */
+    margin-top: 15px;
+    /* Espacio entre el texto y los botones de redes */
 }
 
-.red-google, .red-facebook {
+.red-google,
+.red-facebook {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -443,7 +482,8 @@ input::placeholder {
     transition: background-color 0.3s ease;
 }
 
-.red-google:hover, .red-facebook:hover {
+.red-google:hover,
+.red-facebook:hover {
     background-color: #F9E007;
     color: #16191C;
 }
@@ -466,17 +506,20 @@ input::placeholder {
 }
 
 .red-google .boton-inicio i {
-    color: #4285F4; /* Color de Google */
+    color: #4285F4;
+    /* Color de Google */
 }
 
 .red-facebook .boton-inicio i {
-    color: #1877F2; /* Color de Facebook */
+    color: #1877F2;
+    /* Color de Facebook */
 }
 
 /* crea una cuenta */
 .crearcuenta p {
     position: relative;
-    margin-top: 10px; /* Reducir el espacio entre el texto y el botón */
+    margin-top: 10px;
+    /* Reducir el espacio entre el texto y el botón */
     text-align: center;
     font-family: 'Roboto';
     font-weight: 700;
@@ -486,7 +529,8 @@ input::placeholder {
 
 .crearcuenta a {
     position: relative;
-    margin-top: 10px; /* Reducir el espacio entre el texto y el botón */
+    margin-top: 10px;
+    /* Reducir el espacio entre el texto y el botón */
     text-align: center;
     font-family: 'Roboto';
     font-weight: 700;
