@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Calificación de Apps</title>
+    <link rel="stylesheet" href="Calificación.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="app">
+    <div class="form-container">
+        <h2>Califica nuestra App</h2>
+        <form action="#" method="post">
+
+            <div class="rating">
+                <label for="rating">Calificación general:</label>
+                <div class="stars">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="5 estrellas">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 estrellas">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 estrellas">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 estrellas">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 estrella">★</label>
+                </div>
+            </div>
+            <p>
+
+            <div class="rating">
+                <label for="functionality">Funcionalidad:</label>
+                <div class="stars">
+                    <input type="radio" id="func5" name="functionality" value="5">
+                    <label for="func5" title="5 estrellas">★</label>
+                    <input type="radio" id="func4" name="functionality" value="4">
+                    <label for="func4" title="4 estrellas">★</label>
+                    <input type="radio" id="func3" name="functionality" value="3">
+                    <label for="func3" title="3 estrellas">★</label>
+                    <input type="radio" id="func2" name="functionality" value="2">
+                    <label for="func2" title="2 estrellas">★</label>
+                    <input type="radio" id="func1" name="functionality" value="1">
+                    <label for="func1" title="1 estrella">★</label>
+                </div>
+            </div>
+            </p><p>
+
+            <div class="rating">
+                <label for="design">Diseño:</label>
+                <div class="stars">
+                    <input type="radio" id="design5" name="design" value="5">
+                    <label for="design5" title="5 estrellas">★</label>
+                    <input type="radio" id="design4" name="design" value="4">
+                    <label for="design4" title="4 estrellas">★</label>
+                    <input type="radio" id="design3" name="design" value="3">
+                    <label for="design3" title="3 estrellas">★</label>
+                    <input type="radio" id="design2" name="design" value="2">
+                    <label for="design2" title="2 estrellas">★</label>
+                    <input type="radio" id="design1" name="design" value="1">
+                    <label for="design1" title="1 estrella">★</label>
+                </div>
+            </div>
+            </p><p>
+
+            <div class="rating">
+                <label for="usability">Facilidad de uso:</label>
+                <div class="stars">
+                    <input type="radio" id="use5" name="usability" value="5">
+                    <label for="use5" title="5 estrellas">★</label>
+                    <input type="radio" id="use4" name="usability" value="4">
+                    <label for="use4" title="4 estrellas">★</label>
+                    <input type="radio" id="use3" name="usability" value="3">
+                    <label for="use3" title="3 estrellas">★</label>
+                    <input type="radio" id="use2" name="usability" value="2">
+                    <label for="use2" title="2 estrellas">★</label>
+                    <input type="radio" id="use1" name="usability" value="1">
+                    <label for="use1" title="1 estrella">★</label>
+                </div>
+            </div>
+            </p><p>
+
+            <div class="form-group">
+                <label for="device">Dispositivo utilizado:</label>
+                <select id="device" name="device" required>
+                    <option value="" disabled selected>Seleccione su dispositivo</option>
+                    <option value="android">Android</option>
+                    <option value="ios">iOS</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="pc">PC/Ordenador</option>
+                </select>
+            </div>
+            </p>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="suggestions">Sugerencias adicionales:</label>
+                <textarea id="suggestions" name="suggestions" rows="3"></textarea>
+            </div>
+
+            <button class="send1-button" onclick="window.location.href='calificaciónconductor.html';">
+                <span class="button-text">enviar</span>
+                <span class="button-icon">
+                    <span class="icon-background">
+                        <span class="arrow-icon">→</span>
+                    </span>
+                </span>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
