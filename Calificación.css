@@ -225,14 +225,24 @@ textarea:focus {
     margin-right: 10px;
     accent-color: #01ff27;
 }
+
 body.conductor {
-    background-color: black;
-    color: #fff;
-}
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 140%;
+    background-image: url('https://lh4.googleusercontent.com/proxy/JzLT0A_KnbMzsyaVEQ6lIB1EKrJLyqqD-UMo5ZWUYtTrZxRKP10CYLW9Hufeo41oGPuk2vPFce9sgehHMQSOSslSkFHAPech_UExKnsHnRBfOtU5XTlf1GPA1EEsx1NAAQ8eL1a-H6dl-KHa8uYSzXA77wHNipg6jRH166bnIBie');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
 
 .container-group {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Cambiado para centrar los contenedores */
     flex-wrap: wrap;
     gap: 25px;
     padding: 25px;
@@ -252,6 +262,9 @@ body.conductor {
     padding: 25px;
     border: solid 5px rgb(248, 232, 0);
     color: #F8E800;
+    display: flex; /* Añadido para usar flexbox */
+    flex-direction: column; /* Cambiado para alinear elementos verticalmente */
+    align-items: center; /* Alinea los elementos al centro */
 }
 
 .taxi-image {
@@ -285,7 +298,7 @@ textarea {
 }
 
 button {
-    width: 100%;
+    width: 100%; /* Mantiene el botón ocupando el ancho completo */
     padding: 15px;
     background-color: #F9E007;
     border: none;
@@ -299,12 +312,14 @@ button {
 button:hover {
     background-color: #046b09;
     background: #14e196;
-    transform: scale(1.80);
+    transform: scale(1.05); /* Ajustado para un efecto de hover más sutil */
 }
-.button:active {
+
+button:active {
     background: #4600c7;
-    transform: scale(1.13);
+    transform: scale(0.95); /* Ajustado para un efecto de activación más sutil */
 }
+
 
 
 
