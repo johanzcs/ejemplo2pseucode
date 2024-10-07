@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #b3a395; 
+    text-align: center;
+}
+
+/* Fondo con movimiento suave */
+.fondo-navidad {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/026/304/994/small_2x/outdoor-christmas-decorations-and-a-beautifully-decorated-christmas-tree-ai-generated-photo.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    z-index: -1;
+    animation: moverFondo 20s linear infinite; /* Animación del fondo */
+}
+
+@keyframes moverFondo {
+    0% { background-position: center; }
+    50% { background-position: top; }
+    100% { background-position: center; }
+}
+
+/* Nieve cayendo */
+.snow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.snow {
+    position: absolute;
+    top: -10px;
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: fall 10s linear infinite, sideWays 3s ease-in-out infinite;
+}
+
+.snow:nth-child(1) {
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.snow:nth-child(2) {
+    left: 30%;
+    animation-duration: 10s;
+}
+
+.snow:nth-child(3) {
+    left: 50%;
+    animation-duration: 12s;
+}
+
+.snow:nth-child(4) {
+    left: 70%;
+    animation-duration: 9s;
+}
+
+@keyframes fall {
+    0% { top: -10px; opacity: 1; }
+    100% { top: 100vh; opacity: 0; }
+}
+
+@keyframes sideWays {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+}
+
+/* Títulos y párrafos con animación */
+h1, p {
+    cursor: pointer;
+    position: relative;
+    z-index: 2; 
+    margin: 20px 0;
+    font-size: 100px;
+    color: #FFFFFF; 
+    opacity: 0; 
+    animation: fadeIn 3s forwards 1s, blink 1.5s infinite alternate, bounceIn 1s ease; /* Animación de entrada y rebote */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+@keyframes bounceIn {
+    0% { transform: translateY(100px); opacity: 0; }
+    60% { transform: translateY(-20px); opacity: 1; }
+    80% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Imágenes navideñas con animación */
+.navidad-imagenes, .navidad-videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.imagen-navidad,
+.video-navidad {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: moverImagen 5s ease-in-out infinite; /* Animación de movimiento continuo */
+}
+
+@keyframes moverImagen {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-10px) scale(1.05); } /* Movimiento sutil hacia arriba */
+    100% { transform: translateY(0) scale(1); }
+}
+
+.imagen-navidad:hover,
+.video-navidad:hover {
+    transform: scale(1.1) translateY(-20px);
+    box-shadow: 0 15px 30px rgba(255, 1, 1, 0.781); /* Efecto de hover */
+}
+
+/* Animación de los fuegos artificiales */
+.fireworks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.firework {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    animation: explotar 9s ease-in-out infinite, girar 3s linear infinite; /* Explosión y rotación */
+}
+
+.firework:nth-child(1) {
+    background-color: rgb(0, 26, 255);
+    animation-delay: 0s;
+    top: 40%;
+    left: 30%;
+}
+
+.firework:nth-child(2) {
+    background-color: green;
+    animation-delay: 1s;
+    top: 60%;
+    left: 70%;
+}
+
+.firework:nth-child(3) {
+    background-color: gold;
+    animation-delay: 1.5s;
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes explotar {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animación de salto para el personaje */
+.character-container {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 200px;
+    height: auto;
+    animation: characterJump 3s infinite ease-in-out;
+}
+
+@keyframes characterJump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-150px); } /* Salto del personaje */
+}
+

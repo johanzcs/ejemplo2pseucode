@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    background-image: url('https://img.freepik.com/fotos-premium/fondos-pantalla-halloween-que-dan-tanto-miedo-como-salen-oscuridad_900396-22823.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3em;
+    color: orange;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contenedorMovimiento {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Cambiado a absolute para cubrir toda la pantalla */
+    top: 0; /* Asegura que comience desde la parte superior */
+    left: 0; /* Asegura que comience desde la parte izquierda */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.contenedorMovimiento .SUSTO {
+    width: 50%; /* Ocupa todo el ancho de la ventana */
+    height: 40%; /* Ocupa toda la altura de la ventana */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJLhQtBqBO7pWvXHcSOloa-CQSPQpI9NLSg&s');
+    background-size: cover;
+    background-position: center; /* Centra la imagen */
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra la imagen */
+    animation-name: aparecer;
+    animation-duration: 12s; /* Duración total de la animación */
+    animation-iteration-count: infinite; /* Repetir indefinidamente */
+    animation-fill-mode: forwards; /* Mantener el estado final */
+    animation-delay: 13s; /* Retraso antes de iniciar la siguiente iteración */
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0; /* Comienza invisible */
+        transform: translate(-40%, -40%) scale(1); /* Tamaño normal */
+    }
+    10% {
+        opacity: 1; /* Totalmente visible */
+        transform: translate(-40%, -40%) scale(4); /* Aumenta rápidamente */
+    }
+    50% {
+        opacity: 1; /* Se mantiene visible */
+        transform: translate(-50%, -50%) scale(4); /* Tamaño grande */
+    }
+    90% {
+        opacity: 0; /* Comienza a desaparecer */
+        transform: translate(-50%, -50%) scale(3); /* Mantiene tamaño grande */
+    }
+    100% {
+        opacity: 0; /* Desaparece al final */
+        transform: translate(-50%, -50%) scale(3); /* Mantiene tamaño grande */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+.contenedorMovimiento .CALABAZA {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmvTol_87dR0Q4USeG1m0TNEtu4ubLtpLUQw&');
+    background-size: cover;
+    opacity: 0;
+    left: 20%;
+    animation-name: movimientosCalabaza;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+.contenedorMovimiento .MONJA {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-image: url('https://media.tenor.com/5WP8NKBeAM4AAAAM/the-nun-valak.gif'); /* Corregido */
+    background-size: cover;
+    opacity: 0;
+    left: 10%;
+    animation-name: movimientosMonja;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.contenedorMovimiento .BRUJA {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0HITcwifDSNc9ylJW6PvTslasHOpdR4T_zA&s');
+    background-size: cover;
+    opacity: 0;
+    top: 10%;
+    animation-name: movimientosBruja;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.contenedorMovimiento .FANTASMA {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://dbdzm869oupei.cloudfront.net/img/sticker/preview/13434.png');
+    background-size: cover;
+    opacity: 0;
+    left: 40%;
+    animation-name: movimientos;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.contenedorMovimiento .EXORCISTA {
+
+        position: absolute;
+        width: 200px; /* Cambia el tamaño según necesites */
+        height: 150px;
+        background-image: url('https://img4.dhresource.com/webp/m/0x0/f3/albu/km/j/26/6dcdfa1e-8443-42ce-9dbc-7a8810f20739.jpg');
+        background-size: cover;
+        opacity: 0;
+        animation-name: aparecerDesaparecer;
+        animation-duration: 17s;
+        animation-iteration-count: infinite;
+
+
+}
+
+.contenedorMovimiento .ARAÑA {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUQJnR7veTTZemIKbq9EkJ5Q-IcOhUAyqx-g&s');
+    background-size: cover;
+    opacity: 0;
+    left: 60%;
+    animation-name: movimientosAraña;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes movimientos {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(-35px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+}
+@keyframes movimientosMonja {
+    0% {
+        opacity: 0;
+        top: 0;
+        height: 200px; /* Altura inicial */
+    }
+    20% {
+        opacity: 1;
+        top: 10%;
+        height: 420px; /* Aumenta altura */
+    }
+    50% {
+        top: 80%; /* Bajar hasta el 90% de la página */
+        height: 150px; /* Máxima altura */
+    }
+    80% {
+        top: 70%;
+        height: 100px; /* Disminuye altura */
+    }
+    100% {
+        opacity: 0;
+        top: 100%; /* Se oculta al final */
+        height: 100px; /* Regresa a la altura original */
+    }
+}
+
+@keyframes movimientosBruja {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        left: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes aparecerDesaparecer {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+        transform: translate(calc(100vw - 100px), calc(100vh - 100px)); /* Mueve la imagen a una nueva posición */
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes movimientosCalabaza {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+@keyframes movimientosAraña {
+    0% {
+        opacity: 0;
+        top: 0;
+        height: 250px; /* Altura inicial */
+    }
+    20% {
+        opacity: 1;
+        top: 10%;
+        height: 470px; /* Aumenta altura */
+    }
+    50% {
+        top: 90%; /* Bajar hasta el 90% de la página */
+        height: 200px; /* Máxima altura */
+    }
+    80% {
+        top: 80%;
+        height: 150px; /* Disminuye altura */
+    }
+    100% {
+        opacity: 0;
+        top: 100%; /* Se oculta al final */
+        height: 100px; /* Regresa a la altura original */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Estiliza el control de audio */
+#audio {
+    width: 300px; /* Define el ancho del control de audio */
+    margin-top: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Opcional: estilizar el contenedor que contiene el audio */
+audio::-webkit-media-controls-panel {
+    background-color: #333; /* Cambiar el fondo del reproductor */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    filter: invert(1); /* Invierte colores para mejor contraste */
+}
+.halloween-message {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5em;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.8); /* Sombra de color naranja */
+    animation: fadeInMessage 4s ease-in-out;
+    font-family: 'Creepster', cursive; /* Si quieres usar una fuente espeluznante */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Animación para hacer que el mensaje aparezca suavemente */
+@keyframes fadeInMessage {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+
+
+
+
+
+
